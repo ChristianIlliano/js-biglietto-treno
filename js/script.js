@@ -13,10 +13,10 @@ console.log(numberKm, typeof numberKm);
 const agePass = parseInt(stringAge) //number
 console.log(agePass, typeof agePass);
 
-const priceTicket = numberKm * 0.21;
+const priceTicket = numberKm * 0.21; //number
 console.log(priceTicket, typeof priceTicket);
 
-let finalPrice = "";
+let finalPrice = priceTicket;
 
 if (agePass < 18) {
     finalPrice = priceTicket - 0.20
@@ -28,8 +28,8 @@ if (agePass < 18) {
     finalPrice = priceTicket;
 }
 
-finalPrice = finalPrice.toFixed(2);
+finalPrice = finalPrice 
 
-console.log(finalPrice);
+console.log(finalPrice.toFixed(2));
 
 document.getElementById("result").innerHTML = finalPrice.toFixed(2);
