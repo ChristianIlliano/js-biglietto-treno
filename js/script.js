@@ -16,15 +16,18 @@ console.log(agePass, typeof agePass);
 const priceTicket = numberKm * 0.21;
 console.log(priceTicket, typeof priceTicket);
 
-let result = result.toFixed(2)
+let finalPrice = ""
 
 if (agePass < 18) {
-    result = priceTicket - 0.20
+    finalPrice = priceTicket - 0.20
     console.log("Prezzo scontato Minorenne");
-    
 } else if (agePass > 65) {
-    result = priceTicket - 0.40
+    finalPrice = priceTicket - 0.40
     console.log("Prezzo scontato Anziano");
+} else {
+    finalPrice = priceTicket
 }
 
-document.getElementById("result").innerHTML = result
+console.log(finalPrice);
+
+document.getElementById("result").innerHTML = finalPrice;
