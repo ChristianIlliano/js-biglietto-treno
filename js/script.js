@@ -19,10 +19,10 @@ console.log(priceTicket, typeof priceTicket);
 let finalPrice = priceTicket;
 
 if (agePass < 18) {
-    finalPrice = priceTicket - 0.20
+    finalPrice = priceTicket - (priceTicket * 20 / 100)
     console.log("Prezzo scontato Minorenne");
 } else if (agePass > 65) {
-    finalPrice = priceTicket - 0.40
+    finalPrice = priceTicket - (priceTicket * 40 / 100)
     console.log("Prezzo scontato Anziano");
 } else {
     finalPrice = priceTicket;
